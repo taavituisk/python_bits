@@ -18,7 +18,7 @@ def main():
 
   session = requests.Session()
   session.auth = (user, 'password')
-  zapi = pyzabbix.ZabbixAPI('https://monitor.grabcad.net/zabbix', session)
+  zapi = pyzabbix.ZabbixAPI('https://zabbix', session)
   print('Logging in to zabbix as user \'{user}\''.format(user = user))
   zapi.login(user)
 
